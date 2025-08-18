@@ -1,5 +1,5 @@
-﻿using FlowFieldNavigation;
-using Latios;
+﻿using Latios;
+using Latios.FlowFieldNavigation;
 using Latios.Transforms;
 using Unity.Entities;
 using Unity.Jobs;

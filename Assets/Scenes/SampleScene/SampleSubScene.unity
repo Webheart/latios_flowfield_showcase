@@ -145,7 +145,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1432922773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbcf222e0b474336923e0bf5be231f81, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c288f4daffdf3348a884539a6f9a73c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1432922775
@@ -206,9 +206,8 @@ MonoBehaviour:
       x: 0.5
       y: 0.5
   FlowSettings:
-    DensityMultiplier: 1
-    PassabilityMultiplier: 1
-  DrawDebugGizmos: 0
+    DensityInfluence: 1
+  DrawDebugGizmos: 1
 --- !u!4 &2036272695
 Transform:
   m_ObjectHideFlags: 0

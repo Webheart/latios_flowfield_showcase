@@ -1,5 +1,5 @@
-using FlowFieldNavigation;
 using Latios;
+using Latios.FlowFieldNavigation;
 using Latios.Psyshock;
 using Latios.Transforms;
 using Unity.Burst;

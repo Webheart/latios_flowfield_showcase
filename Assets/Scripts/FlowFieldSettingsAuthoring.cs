@@ -1,4 +1,4 @@
-using FlowFieldNavigation;
+using Latios.FlowFieldNavigation;
 using Latios.Transforms;
 using Unity.Entities;
 using Unity.Mathematics;

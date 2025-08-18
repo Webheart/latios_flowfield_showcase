@@ -12,6 +12,12 @@
       },
       "hash": "954496f2a1df8802e56b1b0dc4a262fdc80c199c"
     },
+    "com.latios.latiosframework.addons": {
+      "version": "file:Latios-Framework-Add-Ons",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.ai.navigation": {
       "version": "2.0.7",
       "depth": 0,
