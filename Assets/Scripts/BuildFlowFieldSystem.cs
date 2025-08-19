@@ -40,6 +40,7 @@ public partial struct BuildFlowFieldSystem : ISystem, ISystemNewScene
 
         FlowFieldSettings settings;
         if (latiosWorld.sceneBlackboardEntity.HasComponent<FlowFieldSettings>()) settings = latiosWorld.sceneBlackboardEntity.GetComponentData<FlowFieldSettings>();
+        else if (SystemAPI.HasSingleton<FlowFieldSettings>()) settings = SystemAPI.GetSingleton<FlowFieldSettings>();
         else settings = new FlowFieldSettings { FieldSettings = FieldSettings.Default, FlowSettings = FlowSettings.Default };
 
         state.Dependency = FlowField.BuildField().WithTransform(settings.FlowFieldTransform)
