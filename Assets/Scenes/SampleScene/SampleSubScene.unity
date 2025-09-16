@@ -119,6 +119,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &383204404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 383204406}
+  - component: {fileID: 383204405}
+  m_Layer: 0
+  m_Name: FlowFieldGoal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &383204405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383204404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c288f4daffdf3348a884539a6f9a73c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FootprintSizeX: 3
+  FootprintSizeY: 3
+--- !u!4 &383204406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383204404}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 61.3, y: 0, z: -59.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1432922773
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,7 +194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c288f4daffdf3348a884539a6f9a73c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FootprintSize: 2
+  FootprintSizeX: 3
+  FootprintSizeY: 3
 --- !u!4 &1432922775
 Transform:
   m_ObjectHideFlags: 0
@@ -158,7 +205,7 @@ Transform:
   m_GameObject: {fileID: 1432922773}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 0, z: -0.92}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -198,8 +245,8 @@ MonoBehaviour:
   TransformRotation: {x: 0, y: 0, z: 0}
   FieldSettings:
     FieldSize:
-      x: 100
-      y: 100
+      x: 512
+      y: 512
     CellSize:
       x: 1
       y: 1
@@ -208,7 +255,7 @@ MonoBehaviour:
       y: 0.5
   FlowSettings:
     DensityInfluence: 1
-  DrawDebugGizmos: 1
+  DrawDebugGizmos: 0
 --- !u!4 &2036272695
 Transform:
   m_ObjectHideFlags: 0
@@ -244,3 +291,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 2036272695}
   - {fileID: 1432922775}
+  - {fileID: 383204406}

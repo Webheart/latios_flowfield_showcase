@@ -88,6 +88,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FootprintSize: 3
+  MinDensity: 0.2
+  MaxDensity: 2
 --- !u!1 &3379591189499328036
 GameObject:
   m_ObjectHideFlags: 0

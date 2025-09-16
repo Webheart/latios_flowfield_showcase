@@ -29,7 +29,7 @@ public class FlowFieldSettingsAuthoring : MonoBehaviour
             {
                 FlowSettings = authoring.FlowSettings,
                 FieldSettings = authoring.FieldSettings,
-                FlowFieldTransform = new TransformQvvs(authoring.TransformPosition, quaternion.Euler(authoring.TransformRotation)),
+                FlowFieldTransform = new TransformQvvs(authoring.TransformPosition, quaternion.Euler(authoring.TransformRotation * math.TORADIANS)),
                 DrawDebugGizmos = authoring.DrawDebugGizmos
             });
         }

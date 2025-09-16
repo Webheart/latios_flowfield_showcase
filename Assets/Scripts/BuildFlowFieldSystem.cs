@@ -45,7 +45,7 @@ public partial struct BuildFlowFieldSystem : ISystem, ISystemNewScene
 
         state.Dependency = FlowField.BuildField().WithTransform(settings.FlowFieldTransform)
             .WithSettings(settings.FieldSettings)
-            .WithObstacles(obstacleLayer.Layer, CollisionLayerSettings.kDefault)
+            .WithObstacles(obstacleLayer.Layer)
             .WithAgents(agentsQuery, in fieldHandles)
             .ScheduleParallel(out var field, state.WorldUpdateAllocator, state.Dependency);
 
